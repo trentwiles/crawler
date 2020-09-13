@@ -7,4 +7,6 @@ $site = $ARGV[0];
 
 $number = rand(1000);
 
-print exec("curl -A '${agent}' ${site} > ${number}.html");
+exec("curl -A '${agent}' ${site} > ${number}.html");
+
+echo "${number}.html";
